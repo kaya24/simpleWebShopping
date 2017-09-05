@@ -68,6 +68,7 @@ public class ItemDAO {
 				item.setItem_id(res.getString("item_id"));
 				item.setItem_name(res.getString("item_name"));
 				item.setPrice(res.getInt("price"));
+				item.setPicture(res.getString("picture"));
 				item.setQuantity(res.getInt("quantity"));
 			}
 

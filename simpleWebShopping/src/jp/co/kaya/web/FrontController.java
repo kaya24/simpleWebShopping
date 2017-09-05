@@ -55,6 +55,10 @@ public class FrontController extends HttpServlet {
 			action = new DetailAction();
 			page = action.execute(req);
 			break;
+		case "BACK":
+			action = new BackAction();
+			page = action.execute(req);
+
 		case "NEWACCOUNT":
 			break;
 		}

@@ -10,6 +10,10 @@
 <%@include file="header.jsp" %>
 <h1>商品詳細</h1>
 
+<form method="post" action="/simpleWebShopping/FrontCont">
+	<input type="hidden" name="BUTTON_ID" value="">
+	<input type="hidden" name="item_id" value="">
+
 <table style="width: 931px, height: 677px" border="1">
 	<tr>
 		<th>商品ID</th>
@@ -24,5 +28,9 @@
 	<td><c:out value="${item.quantity}"></c:out></td>
 	</tr>
 </table>
+<input type="submit" value="戻る" onclick="this.form.BUTTON_ID.value='BACK';
+	this.form.item_id.value='<c:out value="${item.item_id}"></c:out>';">
+</form>
+
 </body>
 </html>

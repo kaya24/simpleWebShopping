@@ -11,7 +11,7 @@
 
 <div id="wrapper">
 
-	<div>
+	<div id="logo_font">
 		<a href="/simpleWebShopping/FrontCont?BUTTON_ID=TOP">A株式会社</a><br>
 	</div>
 
